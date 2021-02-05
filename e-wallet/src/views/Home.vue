@@ -44,11 +44,12 @@ export default {
       this.$router.push("/addcard");
     },
     removeButton() {
-      const confirmation = window.confirm("Are you sure you want to delete this card permanently?");
+      const confirmation = window.confirm(
+        "Are you sure you want to delete this card permanently?"
+      );
       if (confirmation === true) {
-       this.$root.$data.cards.splice(this.$root.$data.activeCard, 1);
-      
-    }
+        this.$root.$data.cards.splice(this.$root.$data.activeCard, 1);
+      }
     }
   },
   computed: {
